@@ -1,0 +1,1422 @@
+2026-03-11 20:44:37,540 - __main__ - INFO - Bot started successfully
+2026-03-11 20:44:37,540 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 20:44:37,789 - aiogram.dispatcher - INFO - Run polling for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 20:44:49,756 - aiogram.event - INFO - Update id=492417669 is handled. Duration 700 ms by bot id=8645316560
+2026-03-11 20:44:55,859 - aiogram.event - INFO - Update id=492417670 is handled. Duration 1275 ms by bot id=8645316560
+2026-03-11 20:45:02,125 - aiogram.event - INFO - Update id=492417671 is handled. Duration 138 ms by bot id=8645316560
+2026-03-11 20:45:05,141 - aiogram.event - INFO - Update id=492417672 is handled. Duration 318 ms by bot id=8645316560
+2026-03-11 20:45:12,910 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-03-11 20:45:14,753 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-03-11 20:45:16,292 - aiogram.event - INFO - Update id=492417673 is handled. Duration 3419 ms by bot id=8645316560
+2026-03-11 20:45:31,300 - aiogram.event - INFO - Update id=492417674 is handled. Duration 1014 ms by bot id=8645316560
+2026-03-11 20:45:38,588 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2026-03-11 20:45:38,589 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-03-11 20:45:39,152 - aiogram.event - INFO - Update id=492417675 is handled. Duration 1980 ms by bot id=8645316560
+2026-03-11 20:45:43,946 - aiogram.event - INFO - Update id=492417676 is handled. Duration 79 ms by bot id=8645316560
+2026-03-11 20:45:46,746 - aiogram.event - INFO - Update id=492417677 is handled. Duration 534 ms by bot id=8645316560
+2026-03-11 20:45:51,148 - aiogram.event - INFO - Update id=492417678 is handled. Duration 73 ms by bot id=8645316560
+2026-03-11 20:46:04,468 - aiogram.event - INFO - Update id=492417679 is handled. Duration 1304 ms by bot id=8645316560
+2026-03-11 20:46:07,810 - aiogram.event - INFO - Update id=492417680 is handled. Duration 402 ms by bot id=8645316560
+2026-03-11 20:46:12,867 - aiogram.event - INFO - Update id=492417681 is handled. Duration 107 ms by bot id=8645316560
+2026-03-11 20:46:17,952 - aiogram.event - INFO - Update id=492417682 is handled. Duration 287 ms by bot id=8645316560
+2026-03-11 20:46:28,090 - aiogram.event - INFO - Update id=492417683 is handled. Duration 70 ms by bot id=8645316560
+2026-03-11 20:46:33,234 - aiogram.event - INFO - Update id=492417684 is handled. Duration 622 ms by bot id=8645316560
+2026-03-11 20:46:36,971 - aiogram.event - INFO - Update id=492417685 is handled. Duration 735 ms by bot id=8645316560
+2026-03-11 20:46:40,611 - aiogram.event - INFO - Update id=492417686 is handled. Duration 1231 ms by bot id=8645316560
+2026-03-11 20:46:42,510 - aiogram.event - INFO - Update id=492417687 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 20:46:48,364 - aiogram.event - INFO - Update id=492417688 is handled. Duration 784 ms by bot id=8645316560
+2026-03-11 20:46:50,021 - aiogram.event - INFO - Update id=492417689 is not handled. Duration 2 ms by bot id=8645316560
+2026-03-11 20:46:50,021 - aiogram.event - ERROR - Cause exception while process update id=492417689 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1388, in import_chats_from_account
+    account_id = int(parts[4])
+                     ~~~~~^^^
+IndexError: list index out of range
+2026-03-11 20:47:54,146 - aiogram.event - INFO - Update id=492417690 is handled. Duration 789 ms by bot id=8645316560
+2026-03-11 20:47:55,110 - aiogram.event - INFO - Update id=492417691 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 20:48:05,476 - aiogram.event - INFO - Update id=492417692 is handled. Duration 137 ms by bot id=8645316560
+2026-03-11 20:48:06,561 - aiogram.event - INFO - Update id=492417693 is not handled. Duration 2 ms by bot id=8645316560
+2026-03-11 20:48:06,562 - aiogram.event - ERROR - Cause exception while process update id=492417693 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1388, in import_chats_from_account
+    account_id = int(parts[4])
+                     ~~~~~^^^
+IndexError: list index out of range
+2026-03-11 20:50:21,166 - aiogram.dispatcher - INFO - Polling stopped
+2026-03-11 20:50:21,168 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-03-11 20:50:21,168 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8645316560)
+2026-03-11 20:50:21,423 - aiogram.dispatcher - INFO - Polling stopped for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 21:13:09,793 - __main__ - INFO - Bot started successfully
+2026-03-11 21:13:09,793 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 21:13:09,984 - aiogram.dispatcher - INFO - Run polling for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 21:13:18,361 - aiogram.event - INFO - Update id=492417694 is handled. Duration 681 ms by bot id=8645316560
+2026-03-11 21:13:31,758 - aiogram.event - INFO - Update id=492417695 is handled. Duration 73 ms by bot id=8645316560
+2026-03-11 21:13:35,777 - aiogram.event - INFO - Update id=492417696 is handled. Duration 332 ms by bot id=8645316560
+2026-03-11 21:13:38,300 - aiogram.event - INFO - Update id=492417697 is handled. Duration 88 ms by bot id=8645316560
+2026-03-11 21:13:42,222 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-03-11 21:13:42,265 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-03-11 21:13:43,768 - telethon.client.users - WARNING - Telegram is having internal issues AuthRestartError: Restart the authorization process (caused by SendCodeRequest)
+2026-03-11 21:13:43,823 - telethon.client.updates - INFO - Cannot get difference since the account is not logged in: AuthKeyUnregisteredError
+2026-03-11 21:13:43,823 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2026-03-11 21:13:43,824 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-03-11 21:13:45,875 - aiogram.event - INFO - Update id=492417698 is handled. Duration 3658 ms by bot id=8645316560
+2026-03-11 21:14:03,620 - aiogram.event - INFO - Update id=492417699 is handled. Duration 774 ms by bot id=8645316560
+2026-03-11 21:14:05,562 - aiogram.event - INFO - Update id=492417700 is handled. Duration 509 ms by bot id=8645316560
+2026-03-11 21:14:10,981 - aiogram.event - INFO - Update id=492417701 is handled. Duration 75 ms by bot id=8645316560
+2026-03-11 21:14:13,171 - aiogram.event - INFO - Update id=492417702 is handled. Duration 80 ms by bot id=8645316560
+2026-03-11 21:14:21,985 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-03-11 21:14:23,701 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-03-11 21:14:25,015 - aiogram.event - INFO - Update id=492417703 is handled. Duration 3079 ms by bot id=8645316560
+2026-03-11 21:14:41,172 - aiogram.event - INFO - Update id=492417704 is handled. Duration 101 ms by bot id=8645316560
+2026-03-11 21:14:42,514 - aiogram.event - INFO - Update id=492417705 is handled. Duration 368 ms by bot id=8645316560
+2026-03-11 21:14:47,923 - aiogram.event - INFO - Update id=492417706 is handled. Duration 331 ms by bot id=8645316560
+2026-03-11 21:14:51,467 - aiogram.event - INFO - Update id=492417707 is handled. Duration 237 ms by bot id=8645316560
+2026-03-11 21:15:02,201 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-03-11 21:15:03,992 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-03-11 21:15:05,802 - aiogram.event - INFO - Update id=492417708 is handled. Duration 3636 ms by bot id=8645316560
+2026-03-11 21:15:17,789 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2026-03-11 21:15:17,789 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-03-11 21:15:17,795 - aiogram.event - INFO - Update id=492417709 is handled. Duration 1071 ms by bot id=8645316560
+2026-03-11 21:15:51,197 - aiogram.event - INFO - Update id=492417710 is handled. Duration 803 ms by bot id=8645316560
+2026-03-11 21:15:53,719 - aiogram.event - INFO - Update id=492417711 is handled. Duration 530 ms by bot id=8645316560
+2026-03-11 21:15:58,040 - aiogram.event - INFO - Update id=492417712 is handled. Duration 367 ms by bot id=8645316560
+2026-03-11 21:16:01,408 - aiogram.event - INFO - Update id=492417713 is handled. Duration 357 ms by bot id=8645316560
+2026-03-11 21:16:04,353 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-03-11 21:16:06,041 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-03-11 21:16:07,793 - aiogram.event - INFO - Update id=492417714 is handled. Duration 3477 ms by bot id=8645316560
+2026-03-11 21:16:22,493 - aiogram.event - INFO - Update id=492417715 is handled. Duration 1252 ms by bot id=8645316560
+2026-03-11 21:16:30,004 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2026-03-11 21:16:30,005 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-03-11 21:16:30,389 - aiogram.event - INFO - Update id=492417716 is handled. Duration 2316 ms by bot id=8645316560
+2026-03-11 21:16:35,299 - aiogram.event - INFO - Update id=492417717 is handled. Duration 135 ms by bot id=8645316560
+2026-03-11 21:16:37,452 - aiogram.event - INFO - Update id=492417718 is handled. Duration 161 ms by bot id=8645316560
+2026-03-11 21:16:40,248 - aiogram.event - INFO - Update id=492417719 is handled. Duration 515 ms by bot id=8645316560
+2026-03-11 21:16:45,054 - aiogram.event - INFO - Update id=492417720 is handled. Duration 514 ms by bot id=8645316560
+2026-03-11 21:16:50,556 - aiogram.event - INFO - Update id=492417721 is not handled. Duration 2 ms by bot id=8645316560
+2026-03-11 21:16:50,556 - aiogram.event - ERROR - Cause exception while process update id=492417721 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1388, in import_chats_from_account
+    account_id = int(parts[4])
+                     ~~~~~^^^
+IndexError: list index out of range
+2026-03-11 21:16:57,436 - aiogram.event - INFO - Update id=492417722 is not handled. Duration 2 ms by bot id=8645316560
+2026-03-11 21:16:57,436 - aiogram.event - ERROR - Cause exception while process update id=492417722 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1388, in import_chats_from_account
+    account_id = int(parts[4])
+                     ~~~~~^^^
+IndexError: list index out of range
+2026-03-11 21:17:05,191 - aiogram.event - INFO - Update id=492417723 is handled. Duration 135 ms by bot id=8645316560
+2026-03-11 21:17:07,811 - aiogram.event - INFO - Update id=492417724 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 21:17:17,528 - aiogram.event - INFO - Update id=492417725 is handled. Duration 477 ms by bot id=8645316560
+2026-03-11 21:17:18,419 - aiogram.event - INFO - Update id=492417726 is not handled. Duration 2 ms by bot id=8645316560
+2026-03-11 21:17:18,420 - aiogram.event - ERROR - Cause exception while process update id=492417726 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1388, in import_chats_from_account
+    account_id = int(parts[4])
+                     ~~~~~^^^
+IndexError: list index out of range
+2026-03-11 21:17:19,454 - aiogram.event - INFO - Update id=492417727 is not handled. Duration 2 ms by bot id=8645316560
+2026-03-11 21:17:19,454 - aiogram.event - ERROR - Cause exception while process update id=492417727 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1388, in import_chats_from_account
+    account_id = int(parts[4])
+                     ~~~~~^^^
+IndexError: list index out of range
+2026-03-11 21:22:29,685 - aiogram.event - INFO - Update id=492417728 is not handled. Duration 2 ms by bot id=8645316560
+2026-03-11 21:22:29,686 - aiogram.event - ERROR - Cause exception while process update id=492417728 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1388, in import_chats_from_account
+    parts = query.data.split(":")
+                 ^^^^^^^^
+IndexError: list index out of range
+2026-03-11 21:22:30,546 - aiogram.event - INFO - Update id=492417729 is handled. Duration 307 ms by bot id=8645316560
+2026-03-11 21:22:35,386 - aiogram.event - INFO - Update id=492417730 is handled. Duration 518 ms by bot id=8645316560
+2026-03-11 21:22:41,649 - aiogram.event - INFO - Update id=492417731 is handled. Duration 1251 ms by bot id=8645316560
+2026-03-11 21:22:42,508 - aiogram.event - INFO - Update id=492417732 is not handled. Duration 4 ms by bot id=8645316560
+2026-03-11 21:22:56,338 - aiogram.event - INFO - Update id=492417733 is handled. Duration 887 ms by bot id=8645316560
+2026-03-11 21:22:57,043 - aiogram.event - INFO - Update id=492417734 is not handled. Duration 5 ms by bot id=8645316560
+2026-03-11 21:23:03,475 - aiogram.event - INFO - Update id=492417735 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 21:23:08,410 - aiogram.event - INFO - Update id=492417736 is handled. Duration 489 ms by bot id=8645316560
+2026-03-11 21:23:10,928 - aiogram.event - INFO - Update id=492417737 is handled. Duration 584 ms by bot id=8645316560
+2026-03-11 21:23:14,703 - aiogram.event - INFO - Update id=492417738 is handled. Duration 174 ms by bot id=8645316560
+2026-03-11 21:23:20,240 - aiogram.event - INFO - Update id=492417739 is not handled. Duration 1 ms by bot id=8645316560
+2026-03-11 21:23:20,241 - aiogram.event - ERROR - Cause exception while process update id=492417739 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1124, in parse_chats_from_account
+    account_id = int(query.data.split(":")[3])
+                     ~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-03-11 21:23:24,648 - aiogram.event - INFO - Update id=492417740 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 21:23:50,493 - aiogram.event - INFO - Update id=492417741 is handled. Duration 12111 ms by bot id=8645316560
+2026-03-11 21:23:53,379 - aiogram.event - INFO - Update id=492417742 is handled. Duration 692 ms by bot id=8645316560
+2026-03-11 21:23:57,194 - aiogram.dispatcher - INFO - Polling stopped
+2026-03-11 21:23:57,195 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-03-11 21:23:57,196 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8645316560)
+2026-03-11 21:23:57,458 - aiogram.dispatcher - INFO - Polling stopped for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 21:25:18,997 - __main__ - INFO - Bot started successfully
+2026-03-11 21:25:18,998 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 21:25:19,228 - aiogram.dispatcher - INFO - Run polling for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 21:25:27,876 - aiogram.event - INFO - Update id=492417743 is handled. Duration 1254 ms by bot id=8645316560
+2026-03-11 21:25:31,670 - aiogram.event - INFO - Update id=492417744 is handled. Duration 798 ms by bot id=8645316560
+2026-03-11 21:25:33,593 - aiogram.event - INFO - Update id=492417745 is handled. Duration 547 ms by bot id=8645316560
+2026-03-11 21:25:36,972 - aiogram.event - INFO - Update id=492417746 is handled. Duration 109 ms by bot id=8645316560
+2026-03-11 21:25:38,301 - aiogram.event - INFO - Update id=492417747 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 21:25:49,656 - aiogram.event - INFO - Update id=492417748 is handled. Duration 473 ms by bot id=8645316560
+2026-03-11 21:25:52,236 - aiogram.event - INFO - Update id=492417749 is handled. Duration 909 ms by bot id=8645316560
+2026-03-11 21:25:53,734 - aiogram.event - INFO - Update id=492417750 is not handled. Duration 1 ms by bot id=8645316560
+2026-03-11 21:25:53,734 - aiogram.event - ERROR - Cause exception while process update id=492417750 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1124, in parse_chats_from_account
+    account_id = int(query.data.split(":")[3])
+                     ~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-03-11 21:26:00,345 - aiogram.event - INFO - Update id=492417751 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 21:27:18,482 - aiogram.event - INFO - Update id=492417752 is handled. Duration 1128 ms by bot id=8645316560
+2026-03-11 21:27:20,752 - aiogram.event - INFO - Update id=492417753 is handled. Duration 105 ms by bot id=8645316560
+2026-03-11 21:27:23,692 - aiogram.event - INFO - Update id=492417754 is handled. Duration 355 ms by bot id=8645316560
+2026-03-11 21:27:26,779 - aiogram.event - INFO - Update id=492417755 is handled. Duration 532 ms by bot id=8645316560
+2026-03-11 21:27:31,287 - aiogram.event - INFO - Update id=492417756 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 21:27:34,246 - aiogram.event - INFO - Update id=492417757 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 21:27:38,161 - aiogram.event - INFO - Update id=492417758 is handled. Duration 946 ms by bot id=8645316560
+2026-03-11 21:27:48,198 - aiogram.event - INFO - Update id=492417759 is handled. Duration 77 ms by bot id=8645316560
+2026-03-11 21:27:50,095 - aiogram.event - INFO - Update id=492417760 is handled. Duration 456 ms by bot id=8645316560
+2026-03-11 21:27:50,478 - aiogram.event - INFO - Update id=492417761 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 21:27:53,740 - aiogram.event - INFO - Update id=492417762 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 22:46:03,547 - aiogram.event - INFO - Update id=492417763 is handled. Duration 1521 ms by bot id=8645316560
+2026-03-11 22:46:23,149 - aiogram.event - INFO - Update id=492417764 is handled. Duration 158 ms by bot id=8645316560
+2026-03-11 22:46:25,171 - aiogram.event - INFO - Update id=492417765 is handled. Duration 816 ms by bot id=8645316560
+2026-03-11 22:46:28,144 - aiogram.event - INFO - Update id=492417766 is not handled. Duration 4 ms by bot id=8645316560
+2026-03-11 22:46:42,952 - aiogram.event - INFO - Update id=492417767 is handled. Duration 5011 ms by bot id=8645316560
+2026-03-11 22:46:43,520 - aiogram.event - INFO - Update id=492417768 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 22:46:46,984 - aiogram.event - INFO - Update id=492417769 is handled. Duration 178 ms by bot id=8645316560
+2026-03-11 22:46:49,139 - __main__ - INFO - Callback data: chat:import_from_account:1:2
+2026-03-11 22:46:49,139 - __main__ - INFO - Parts: ['chat', 'import_from_account', '1', '2']
+2026-03-11 22:46:49,195 - __main__ - ERROR - Invalid callback data format: chat:import_from_account:1:2
+2026-03-11 22:46:49,195 - aiogram.event - INFO - Update id=492417770 is handled. Duration 58 ms by bot id=8645316560
+2026-03-11 22:46:53,760 - __main__ - INFO - Callback data: chat:import_from_account:1:1
+2026-03-11 22:46:53,761 - __main__ - INFO - Parts: ['chat', 'import_from_account', '1', '1']
+2026-03-11 22:46:54,335 - __main__ - ERROR - Invalid callback data format: chat:import_from_account:1:1
+2026-03-11 22:46:54,335 - aiogram.event - INFO - Update id=492417771 is handled. Duration 577 ms by bot id=8645316560
+2026-03-11 22:47:42,004 - __main__ - INFO - Callback data: chat:import_from_account:1:2
+2026-03-11 22:47:42,004 - __main__ - INFO - Parts: ['chat', 'import_from_account', '1', '2']
+2026-03-11 22:47:42,338 - __main__ - ERROR - Invalid callback data format: chat:import_from_account:1:2
+2026-03-11 22:47:42,338 - aiogram.event - INFO - Update id=492417772 is handled. Duration 336 ms by bot id=8645316560
+2026-03-11 22:47:58,460 - aiogram.event - INFO - Update id=492417773 is handled. Duration 393 ms by bot id=8645316560
+2026-03-11 22:48:00,821 - aiogram.event - INFO - Update id=492417774 is handled. Duration 1063 ms by bot id=8645316560
+2026-03-11 22:48:02,560 - aiogram.event - INFO - Update id=492417775 is not handled. Duration 4 ms by bot id=8645316560
+2026-03-11 22:48:03,406 - aiogram.event - INFO - Update id=492417776 is not handled. Duration 1 ms by bot id=8645316560
+2026-03-11 22:48:03,407 - aiogram.event - ERROR - Cause exception while process update id=492417776 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1124, in parse_chats_from_account
+    account_id = int(query.data.split(":")[3])
+                     ~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-03-11 22:48:23,390 - aiogram.event - INFO - Update id=492417777 is handled. Duration 572 ms by bot id=8645316560
+2026-03-11 22:48:26,506 - aiogram.event - INFO - Update id=492417778 is handled. Duration 1472 ms by bot id=8645316560
+2026-03-11 22:48:50,212 - aiogram.event - INFO - Update id=492417779 is handled. Duration 300 ms by bot id=8645316560
+2026-03-11 22:48:57,533 - aiogram.event - INFO - Update id=492417780 is handled. Duration 50 ms by bot id=8645316560
+2026-03-11 22:49:02,639 - aiogram.event - INFO - Update id=492417781 is handled. Duration 338 ms by bot id=8645316560
+2026-03-11 22:49:09,000 - aiogram.event - INFO - Update id=492417782 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 22:49:15,195 - aiogram.event - INFO - Update id=492417784 is handled. Duration 1011 ms by bot id=8645316560
+2026-03-11 22:49:16,275 - aiogram.event - INFO - Update id=492417785 is not handled. Duration 4 ms by bot id=8645316560
+2026-03-11 22:49:17,296 - aiogram.event - INFO - Update id=492417783 is not handled. Duration 5094 ms by bot id=8645316560
+2026-03-11 22:49:17,297 - aiogram.event - ERROR - Cause exception while process update id=492417783 by bot id=8645316560
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1292, in manage_preset_chats
+    await query.message.edit_text(text, parse_mode=ParseMode.MARKDOWN, reply_markup=builder.as_markup())
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\client\bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-03-11 22:49:20,482 - aiogram.event - INFO - Update id=492417786 is handled. Duration 110 ms by bot id=8645316560
+2026-03-11 22:49:23,116 - __main__ - INFO - Callback data: chat:import_from_account:1:1
+2026-03-11 22:49:23,117 - __main__ - INFO - Parts: ['chat', 'import_from_account', '1', '1']
+2026-03-11 22:49:23,665 - __main__ - ERROR - Invalid callback data format: chat:import_from_account:1:1
+2026-03-11 22:49:23,665 - aiogram.event - INFO - Update id=492417787 is handled. Duration 551 ms by bot id=8645316560
+2026-03-11 22:49:25,046 - __main__ - INFO - Callback data: chat:import_from_account:1:1
+2026-03-11 22:49:25,047 - __main__ - INFO - Parts: ['chat', 'import_from_account', '1', '1']
+2026-03-11 22:49:25,354 - __main__ - ERROR - Invalid callback data format: chat:import_from_account:1:1
+2026-03-11 22:49:25,354 - aiogram.event - INFO - Update id=492417788 is handled. Duration 310 ms by bot id=8645316560
+2026-03-11 22:49:26,006 - __main__ - INFO - Callback data: chat:import_from_account:1:2
+2026-03-11 22:49:26,006 - __main__ - INFO - Parts: ['chat', 'import_from_account', '1', '2']
+2026-03-11 22:49:26,322 - __main__ - ERROR - Invalid callback data format: chat:import_from_account:1:2
+2026-03-11 22:49:26,322 - aiogram.event - INFO - Update id=492417789 is handled. Duration 318 ms by bot id=8645316560
+2026-03-11 22:49:29,929 - aiogram.event - INFO - Update id=492417790 is handled. Duration 687 ms by bot id=8645316560
+2026-03-11 22:49:31,616 - aiogram.event - INFO - Update id=492417791 is handled. Duration 590 ms by bot id=8645316560
+2026-03-11 22:49:32,918 - aiogram.event - INFO - Update id=492417792 is not handled. Duration 7 ms by bot id=8645316560
+2026-03-11 22:56:05,846 - aiogram.dispatcher - INFO - Polling stopped
+2026-03-11 22:56:05,850 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-03-11 22:56:05,850 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8645316560)
+2026-03-11 22:56:06,118 - aiogram.dispatcher - INFO - Polling stopped for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 22:56:16,850 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 22:56:17,142 - aiogram.dispatcher - INFO - Run polling for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 22:56:30,037 - aiogram.event - INFO - Update id=492417793 is handled. Duration 504 ms by bot id=8645316560
+2026-03-11 22:56:35,598 - aiogram.event - INFO - Update id=492417794 is handled. Duration 65 ms by bot id=8645316560
+2026-03-11 22:56:37,439 - aiogram.event - INFO - Update id=492417795 is handled. Duration 456 ms by bot id=8645316560
+2026-03-11 22:56:39,258 - aiogram.event - INFO - Update id=492417796 is not handled. Duration 1 ms by bot id=8645316560
+2026-03-11 22:56:39,258 - aiogram.event - ERROR - Cause exception while process update id=492417796 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 721, in parse_chats_from_account
+    account_id = int(query.data.split(":")[3])
+                     ~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-03-11 22:56:43,131 - aiogram.event - INFO - Update id=492417797 is handled. Duration 756 ms by bot id=8645316560
+2026-03-11 22:56:45,127 - aiogram.event - INFO - Update id=492417798 is handled. Duration 67 ms by bot id=8645316560
+2026-03-11 22:56:46,624 - aiogram.event - INFO - Update id=492417799 is handled. Duration 121 ms by bot id=8645316560
+2026-03-11 22:56:48,857 - aiogram.event - INFO - Update id=492417800 is handled. Duration 729 ms by bot id=8645316560
+2026-03-11 22:56:51,243 - aiogram.event - INFO - Update id=492417801 is handled. Duration 397 ms by bot id=8645316560
+2026-03-11 22:56:53,527 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-03-11 22:56:53,568 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-03-11 22:57:21,770 - aiogram.event - INFO - Update id=492417802 is handled. Duration 28677 ms by bot id=8645316560
+2026-03-11 22:57:25,467 - aiogram.event - INFO - Update id=492417803 is handled. Duration 788 ms by bot id=8645316560
+2026-03-11 22:57:37,938 - aiogram.event - INFO - Update id=492417804 is handled. Duration 428 ms by bot id=8645316560
+2026-03-11 22:57:39,404 - aiogram.event - INFO - Update id=492417805 is not handled. Duration 2 ms by bot id=8645316560
+2026-03-11 22:57:39,405 - aiogram.event - ERROR - Cause exception while process update id=492417805 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 828, in confirm_clear_chats
+    preset_id = int(query.data.split(":")[3])
+                    ~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-03-11 23:06:09,797 - aiogram.dispatcher - INFO - Polling stopped
+2026-03-11 23:06:09,798 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-03-11 23:06:09,798 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8645316560)
+2026-03-11 23:06:10,497 - aiogram.dispatcher - INFO - Polling stopped for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 23:06:18,607 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 23:06:18,848 - aiogram.dispatcher - INFO - Run polling for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 23:06:25,134 - aiogram.event - INFO - Update id=492417806 is handled. Duration 674 ms by bot id=8645316560
+2026-03-11 23:06:27,003 - aiogram.event - INFO - Update id=492417807 is handled. Duration 343 ms by bot id=8645316560
+2026-03-11 23:06:28,403 - aiogram.event - INFO - Update id=492417808 is handled. Duration 376 ms by bot id=8645316560
+2026-03-11 23:06:30,107 - aiogram.event - INFO - Update id=492417809 is not handled. Duration 1 ms by bot id=8645316560
+2026-03-11 23:06:30,107 - aiogram.event - ERROR - Cause exception while process update id=492417809 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 864, in parse_chats_from_account
+    account_id = int(query.data.split(":")[3])
+                     ~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-03-11 23:06:32,686 - __main__ - ERROR - Error in parse_folders_from_account: list index out of range
+2026-03-11 23:06:32,686 - aiogram.event - INFO - Update id=492417810 is handled. Duration 320 ms by bot id=8645316560
+2026-03-11 23:06:35,280 - aiogram.event - INFO - Update id=492417811 is handled. Duration 224 ms by bot id=8645316560
+2026-03-11 23:06:37,825 - aiogram.event - INFO - Update id=492417812 is handled. Duration 621 ms by bot id=8645316560
+2026-03-11 23:06:39,864 - aiogram.event - INFO - Update id=492417813 is handled. Duration 1091 ms by bot id=8645316560
+2026-03-11 23:06:43,385 - aiogram.event - INFO - Update id=492417814 is handled. Duration 819 ms by bot id=8645316560
+2026-03-11 23:06:45,069 - aiogram.event - INFO - Update id=492417815 is handled. Duration 300 ms by bot id=8645316560
+2026-03-11 23:06:46,819 - aiogram.event - INFO - Update id=492417816 is handled. Duration 56 ms by bot id=8645316560
+2026-03-11 23:06:49,268 - aiogram.event - INFO - Update id=492417817 is handled. Duration 51 ms by bot id=8645316560
+2026-03-11 23:06:51,901 - aiogram.event - INFO - Update id=492417818 is handled. Duration 51 ms by bot id=8645316560
+2026-03-11 23:06:52,848 - aiogram.event - INFO - Update id=492417819 is handled. Duration 339 ms by bot id=8645316560
+2026-03-11 23:06:54,015 - aiogram.event - INFO - Update id=492417820 is handled. Duration 405 ms by bot id=8645316560
+2026-03-11 23:06:56,513 - aiogram.event - INFO - Update id=492417821 is handled. Duration 1420 ms by bot id=8645316560
+2026-03-11 23:06:59,756 - aiogram.event - INFO - Update id=492417822 is handled. Duration 1706 ms by bot id=8645316560
+2026-03-11 23:07:00,505 - __main__ - ERROR - Error in remove_chat_from_preset: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='preset:chats:1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/frozen_instance
+2026-03-11 23:07:00,505 - aiogram.event - INFO - Update id=492417823 is handled. Duration 122 ms by bot id=8645316560
+2026-03-11 23:07:03,156 - __main__ - ERROR - Error in remove_chat_from_preset: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='preset:chats:1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/frozen_instance
+2026-03-11 23:07:03,156 - aiogram.event - INFO - Update id=492417824 is handled. Duration 378 ms by bot id=8645316560
+2026-03-11 23:07:04,648 - __main__ - ERROR - Error in remove_chat_from_preset: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='preset:chats:1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/frozen_instance
+2026-03-11 23:07:04,648 - aiogram.event - INFO - Update id=492417825 is handled. Duration 708 ms by bot id=8645316560
+2026-03-11 23:07:07,758 - aiogram.event - INFO - Update id=492417826 is handled. Duration 228 ms by bot id=8645316560
+2026-03-11 23:07:09,534 - aiogram.event - INFO - Update id=492417827 is handled. Duration 337 ms by bot id=8645316560
+2026-03-11 23:07:11,147 - aiogram.event - INFO - Update id=492417828 is handled. Duration 350 ms by bot id=8645316560
+2026-03-11 23:07:12,693 - aiogram.event - INFO - Update id=492417829 is handled. Duration 60 ms by bot id=8645316560
+2026-03-11 23:07:13,933 - aiogram.event - INFO - Update id=492417830 is handled. Duration 81 ms by bot id=8645316560
+2026-03-11 23:07:16,135 - aiogram.event - INFO - Update id=492417831 is handled. Duration 582 ms by bot id=8645316560
+2026-03-11 23:07:18,057 - aiogram.event - INFO - Update id=492417832 is handled. Duration 979 ms by bot id=8645316560
+2026-03-11 23:07:27,310 - aiogram.event - INFO - Update id=492417833 is not handled. Duration 4 ms by bot id=8645316560
+2026-03-11 23:07:33,860 - aiogram.event - INFO - Update id=492417834 is not handled. Duration 4 ms by bot id=8645316560
+2026-03-11 23:07:52,464 - aiogram.event - INFO - Update id=492417835 is handled. Duration 363 ms by bot id=8645316560
+2026-03-11 23:11:10,302 - aiogram.event - INFO - Update id=492417836 is handled. Duration 64 ms by bot id=8645316560
+2026-03-11 23:11:12,100 - aiogram.event - INFO - Update id=492417837 is handled. Duration 173 ms by bot id=8645316560
+2026-03-11 23:11:13,595 - aiogram.event - INFO - Update id=492417838 is handled. Duration 478 ms by bot id=8645316560
+2026-03-11 23:11:14,711 - aiogram.event - INFO - Update id=492417839 is handled. Duration 77 ms by bot id=8645316560
+2026-03-11 23:11:17,422 - aiogram.event - INFO - Update id=492417840 is handled. Duration 722 ms by bot id=8645316560
+2026-03-11 23:11:19,801 - aiogram.event - INFO - Update id=492417841 is handled. Duration 434 ms by bot id=8645316560
+2026-03-11 23:11:20,456 - aiogram.event - INFO - Update id=492417842 is not handled. Duration 5 ms by bot id=8645316560
+2026-03-11 23:11:20,457 - aiogram.event - ERROR - Cause exception while process update id=492417842 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1527, in confirm_delete_preset
+    preset_id = int(query.data.split(":")[3])
+                    ~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-03-11 23:11:26,678 - aiogram.event - INFO - Update id=492417843 is handled. Duration 1078 ms by bot id=8645316560
+2026-03-11 23:11:27,084 - aiogram.event - INFO - Update id=492417844 is handled. Duration 140 ms by bot id=8645316560
+2026-03-11 23:11:29,030 - aiogram.event - INFO - Update id=492417845 is handled. Duration 88 ms by bot id=8645316560
+2026-03-11 23:11:31,482 - aiogram.event - INFO - Update id=492417846 is handled. Duration 992 ms by bot id=8645316560
+2026-03-11 23:11:34,660 - aiogram.event - INFO - Update id=492417847 is handled. Duration 381 ms by bot id=8645316560
+2026-03-11 23:11:38,138 - aiogram.event - INFO - Update id=492417848 is handled. Duration 396 ms by bot id=8645316560
+2026-03-11 23:11:39,880 - aiogram.event - INFO - Update id=492417849 is handled. Duration 116 ms by bot id=8645316560
+2026-03-11 23:11:42,426 - aiogram.event - INFO - Update id=492417850 is handled. Duration 371 ms by bot id=8645316560
+2026-03-11 23:11:45,668 - aiogram.event - INFO - Update id=492417851 is handled. Duration 867 ms by bot id=8645316560
+2026-03-11 23:11:48,762 - aiogram.event - INFO - Update id=492417852 is handled. Duration 1068 ms by bot id=8645316560
+2026-03-11 23:11:50,661 - aiogram.event - INFO - Update id=492417853 is handled. Duration 1125 ms by bot id=8645316560
+2026-03-11 23:11:55,494 - aiogram.event - INFO - Update id=492417854 is handled. Duration 1127 ms by bot id=8645316560
+2026-03-11 23:11:57,371 - aiogram.event - INFO - Update id=492417855 is handled. Duration 117 ms by bot id=8645316560
+2026-03-11 23:12:04,499 - aiogram.event - INFO - Update id=492417856 is handled. Duration 52 ms by bot id=8645316560
+2026-03-11 23:12:17,981 - aiogram.event - INFO - Update id=492417857 is handled. Duration 59 ms by bot id=8645316560
+2026-03-11 23:12:24,548 - aiogram.event - INFO - Update id=492417858 is handled. Duration 348 ms by bot id=8645316560
+2026-03-11 23:12:44,486 - aiogram.event - INFO - Update id=492417859 is handled. Duration 446 ms by bot id=8645316560
+2026-03-11 23:12:46,835 - aiogram.event - INFO - Update id=492417860 is handled. Duration 1240 ms by bot id=8645316560
+2026-03-11 23:12:49,017 - aiogram.event - INFO - Update id=492417861 is not handled. Duration 5 ms by bot id=8645316560
+2026-03-11 23:13:17,969 - aiogram.event - INFO - Update id=492417862 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 23:13:21,890 - aiogram.event - INFO - Update id=492417863 is handled. Duration 825 ms by bot id=8645316560
+2026-03-11 23:13:23,612 - aiogram.event - INFO - Update id=492417864 is handled. Duration 351 ms by bot id=8645316560
+2026-03-11 23:13:26,211 - aiogram.event - INFO - Update id=492417865 is handled. Duration 742 ms by bot id=8645316560
+2026-03-11 23:13:28,382 - aiogram.event - INFO - Update id=492417866 is handled. Duration 85 ms by bot id=8645316560
+2026-03-11 23:13:30,994 - aiogram.event - INFO - Update id=492417867 is handled. Duration 880 ms by bot id=8645316560
+2026-03-11 23:13:34,604 - aiogram.event - INFO - Update id=492417868 is handled. Duration 75 ms by bot id=8645316560
+2026-03-11 23:13:47,867 - aiogram.event - INFO - Update id=492417869 is handled. Duration 420 ms by bot id=8645316560
+2026-03-11 23:13:50,517 - aiogram.event - INFO - Update id=492417870 is not handled. Duration 3 ms by bot id=8645316560
+2026-03-11 23:13:50,517 - aiogram.event - ERROR - Cause exception while process update id=492417870 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1333, in run_broadcast_with_account
+    account_id = int(parts[4])
+                     ~~~~~^^^
+IndexError: list index out of range
+2026-03-11 23:14:39,476 - aiogram.event - INFO - Update id=492417871 is handled. Duration 73 ms by bot id=8645316560
+2026-03-11 23:14:42,331 - aiogram.event - INFO - Update id=492417872 is handled. Duration 1241 ms by bot id=8645316560
+2026-03-11 23:14:44,470 - aiogram.event - INFO - Update id=492417873 is handled. Duration 476 ms by bot id=8645316560
+2026-03-11 23:14:45,638 - aiogram.event - INFO - Update id=492417874 is handled. Duration 125 ms by bot id=8645316560
+2026-03-11 23:14:47,123 - aiogram.event - INFO - Update id=492417875 is handled. Duration 338 ms by bot id=8645316560
+2026-03-11 23:14:49,304 - aiogram.event - INFO - Update id=492417876 is handled. Duration 838 ms by bot id=8645316560
+2026-03-11 23:14:50,912 - aiogram.event - INFO - Update id=492417877 is handled. Duration 602 ms by bot id=8645316560
+2026-03-11 23:14:53,280 - aiogram.event - INFO - Update id=492417878 is handled. Duration 862 ms by bot id=8645316560
+2026-03-11 23:14:53,806 - aiogram.event - INFO - Update id=492417879 is not handled. Duration 0 ms by bot id=8645316560
+2026-03-11 23:14:53,806 - aiogram.event - ERROR - Cause exception while process update id=492417879 by bot id=8645316560
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 851, in confirm_delete_account
+    account_id = int(query.data.split(":")[3])
+                     ~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-03-11 23:15:07,325 - aiogram.event - INFO - Update id=492417880 is handled. Duration 224 ms by bot id=8645316560
+2026-03-11 23:15:10,119 - aiogram.event - INFO - Update id=492417881 is handled. Duration 1207 ms by bot id=8645316560
+2026-03-11 23:15:23,900 - aiogram.event - INFO - Update id=492417882 is handled. Duration 199 ms by bot id=8645316560
+2026-03-11 23:15:25,866 - aiogram.event - INFO - Update id=492417883 is handled. Duration 306 ms by bot id=8645316560
+2026-03-11 23:15:30,330 - aiogram.event - INFO - Update id=492417884 is not handled. Duration 5 ms by bot id=8645316560
+2026-03-11 23:15:53,836 - aiogram.event - INFO - Update id=492417885 is handled. Duration 4420 ms by bot id=8645316560
+2026-03-11 23:15:54,672 - __main__ - ERROR - Error in manage_preset_chats: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-03-11 23:15:54,673 - aiogram.event - INFO - Update id=492417886 is handled. Duration 1178 ms by bot id=8645316560
+2026-03-11 23:16:06,575 - aiogram.event - INFO - Update id=492417887 is handled. Duration 782 ms by bot id=8645316560
+2026-03-11 23:16:08,971 - aiogram.event - INFO - Update id=492417888 is handled. Duration 298 ms by bot id=8645316560
+2026-03-11 23:16:10,125 - aiogram.event - INFO - Update id=492417889 is handled. Duration 316 ms by bot id=8645316560
+2026-03-11 23:22:45,359 - aiogram.dispatcher - INFO - Polling stopped
+2026-03-11 23:22:45,361 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-03-11 23:22:45,361 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8645316560)
+2026-03-11 23:22:45,616 - aiogram.dispatcher - INFO - Polling stopped for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 23:23:19,201 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 23:23:19,435 - aiogram.dispatcher - INFO - Run polling for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 23:23:36,290 - __main__ - INFO - User 6897371200 started bot
+2026-03-11 23:23:36,820 - aiogram.event - INFO - Update id=492417890 is handled. Duration 530 ms by bot id=8645316560
+2026-03-11 23:23:39,982 - aiogram.event - INFO - Update id=492417891 is handled. Duration 88 ms by bot id=8645316560
+2026-03-11 23:23:42,355 - aiogram.event - INFO - Update id=492417892 is handled. Duration 935 ms by bot id=8645316560
+2026-03-11 23:23:44,860 - aiogram.event - INFO - Update id=492417893 is handled. Duration 358 ms by bot id=8645316560
+2026-03-11 23:23:49,931 - aiogram.event - INFO - Update id=492417894 is handled. Duration 886 ms by bot id=8645316560
+2026-03-11 23:23:50,380 - aiogram.event - INFO - Update id=492417895 is not handled. Duration 4 ms by bot id=8645316560
+2026-03-11 23:23:54,558 - aiogram.event - INFO - Update id=492417896 is handled. Duration 330 ms by bot id=8645316560
+2026-03-11 23:23:57,509 - aiogram.event - INFO - Update id=492417897 is handled. Duration 664 ms by bot id=8645316560
+2026-03-11 23:23:59,581 - aiogram.event - INFO - Update id=492417898 is handled. Duration 664 ms by bot id=8645316560
+2026-03-11 23:24:01,709 - aiogram.event - INFO - Update id=492417899 is handled. Duration 708 ms by bot id=8645316560
+2026-03-11 23:24:02,716 - aiogram.event - INFO - Update id=492417900 is not handled. Duration 57 ms by bot id=8645316560
+2026-03-11 23:24:02,716 - aiogram.event - ERROR - Cause exception while process update id=492417900 by bot id=8645316560
+ValidationError: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='preset_chats:1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/frozen_instance
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1019, in clear_chats
+    new_query.data = f"preset_chats:{preset_id}"
+    ^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\pydantic\main.py", line 1032, in __setattr__
+    elif (setattr_handler := self._setattr_handler(name, value)) is not None:
+                             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\pydantic\main.py", line 1068, in _setattr_handler
+    _check_frozen(cls, name, value)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\pydantic\main.py", line 89, in _check_frozen
+    raise ValidationError.from_exception_data(
+        model_cls.__name__, [{'type': error_type, 'loc': (name,), 'input': value}]
+    )
+pydantic_core._pydantic_core.ValidationError: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='preset_chats:1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/frozen_instance
+2026-03-11 23:24:05,449 - aiogram.event - INFO - Update id=492417901 is not handled. Duration 55 ms by bot id=8645316560
+2026-03-11 23:24:05,449 - aiogram.event - ERROR - Cause exception while process update id=492417901 by bot id=8645316560
+ValidationError: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='preset_chats:1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/frozen_instance
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\bot1.py", line 1019, in clear_chats
+    new_query.data = f"preset_chats:{preset_id}"
+    ^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\pydantic\main.py", line 1032, in __setattr__
+    elif (setattr_handler := self._setattr_handler(name, value)) is not None:
+                             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\pydantic\main.py", line 1068, in _setattr_handler
+    _check_frozen(cls, name, value)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\pydantic\main.py", line 89, in _check_frozen
+    raise ValidationError.from_exception_data(
+        model_cls.__name__, [{'type': error_type, 'loc': (name,), 'input': value}]
+    )
+pydantic_core._pydantic_core.ValidationError: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='preset_chats:1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/frozen_instance
+2026-03-11 23:24:08,454 - aiogram.event - INFO - Update id=492417902 is handled. Duration 346 ms by bot id=8645316560
+2026-03-11 23:24:10,443 - aiogram.event - INFO - Update id=492417903 is handled. Duration 510 ms by bot id=8645316560
+2026-03-11 23:24:12,331 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-03-11 23:24:12,372 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-03-11 23:24:13,737 - __main__ - ERROR - Error parsing folders for 79810162881: 'DialogFilters' object is not iterable
+2026-03-11 23:24:13,883 - aiogram.event - INFO - Update id=492417904 is handled. Duration 1928 ms by bot id=8645316560
+2026-03-11 23:24:15,971 - aiogram.event - INFO - Update id=492417905 is handled. Duration 147 ms by bot id=8645316560
+2026-03-11 23:24:18,687 - aiogram.event - INFO - Update id=492417906 is handled. Duration 364 ms by bot id=8645316560
+2026-03-11 23:24:20,884 - aiogram.event - INFO - Update id=492417907 is handled. Duration 545 ms by bot id=8645316560
+2026-03-11 23:24:22,904 - aiogram.event - INFO - Update id=492417908 is handled. Duration 125 ms by bot id=8645316560
+2026-03-11 23:24:25,198 - aiogram.event - INFO - Update id=492417909 is handled. Duration 413 ms by bot id=8645316560
+2026-03-11 23:24:26,473 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-03-11 23:24:26,514 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-03-11 23:24:32,052 - __main__ - ERROR - Error creating client for +79810162881: database is locked
+2026-03-11 23:24:32,403 - aiogram.event - INFO - Update id=492417910 is handled. Duration 6188 ms by bot id=8645316560
+2026-03-11 23:25:59,589 - telethon.network.connection.connection - WARNING - Server closed the connection: 0 bytes read on a total of 8 expected bytes
+2026-03-11 23:25:59,590 - telethon.network.mtprotosender - INFO - Connection closed while receiving data: 0 bytes read on a total of 8 expected bytes
+2026-03-11 23:25:59,590 - telethon.network.mtprotosender - INFO - Closing current connection to begin reconnect...
+2026-03-11 23:25:59,591 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-03-11 23:25:59,629 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-03-11 23:27:11,576 - aiogram.event - INFO - Update id=492417911 is handled. Duration 474 ms by bot id=8645316560
+2026-03-11 23:37:02,215 - aiogram.dispatcher - INFO - Polling stopped
+2026-03-11 23:37:02,218 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-03-11 23:37:02,218 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8645316560)
+2026-03-11 23:37:02,479 - aiogram.dispatcher - INFO - Polling stopped for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 23:37:02,704 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-65' coro=<UpdateMethods._keepalive_loop() done, defined at C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\telethon\client\updates.py:485> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\telethon\client\updates.py", line 521, in _keepalive_loop
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\telethon\client\telegrambaseclient.py", line 701, in _save_states_and_entities
+  File "C:\Users\samon\PycharmProjects\PythonProject\.venv\Lib\site-packages\telethon\sessions\sqlite.py", line 301, in process_entities
+sqlite3.OperationalError: database is locked
+2026-03-11 23:37:12,345 - aiogram.dispatcher - INFO - Start polling
+2026-03-11 23:37:12,538 - aiogram.dispatcher - INFO - Run polling for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
+2026-03-11 23:37:26,587 - __main__ - INFO - User 6897371200 started bot
+2026-03-11 23:37:27,255 - aiogram.event - INFO - Update id=492417912 is handled. Duration 668 ms by bot id=8645316560
+2026-03-11 23:37:29,984 - aiogram.event - INFO - Update id=492417913 is handled. Duration 331 ms by bot id=8645316560
+2026-03-11 23:37:32,360 - aiogram.event - INFO - Update id=492417914 is handled. Duration 419 ms by bot id=8645316560
+2026-03-11 23:37:36,402 - aiogram.event - INFO - Update id=492417915 is handled. Duration 1213 ms by bot id=8645316560
+2026-03-11 23:37:38,481 - aiogram.event - INFO - Update id=492417916 is handled. Duration 212 ms by bot id=8645316560
+2026-03-11 23:37:42,263 - aiogram.event - INFO - Update id=492417917 is handled. Duration 671 ms by bot id=8645316560
+2026-03-11 23:37:45,205 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-03-11 23:37:45,246 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-03-11 23:37:46,667 - __main__ - ERROR - Error parsing folders for 79810162881: 'DialogFilters' object is not iterable
+2026-03-11 23:37:47,284 - aiogram.event - INFO - Update id=492417918 is handled. Duration 2559 ms by bot id=8645316560
+2026-03-11 23:37:49,746 - aiogram.event - INFO - Update id=492417919 is handled. Duration 506 ms by bot id=8645316560
+2026-03-11 23:38:11,879 - aiogram.event - INFO - Update id=492417920 is handled. Duration 470 ms by bot id=8645316560
+2026-03-11 23:38:14,126 - aiogram.event - INFO - Update id=492417921 is handled. Duration 697 ms by bot id=8645316560
+2026-03-11 23:38:18,163 - aiogram.event - INFO - Update id=492417922 is handled. Duration 1111 ms by bot id=8645316560
+2026-03-11 23:38:20,293 - aiogram.event - INFO - Update id=492417923 is handled. Duration 1209 ms by bot id=8645316560
+2026-03-11 23:41:37,388 - aiogram.event - INFO - Update id=492417924 is handled. Duration 771 ms by bot id=8645316560
+2026-03-11 23:41:39,335 - __main__ - ERROR - Error parsing folders for 79810162881: 'DialogFilters' object is not iterable
+2026-03-11 23:41:39,423 - aiogram.event - INFO - Update id=492417925 is handled. Duration 880 ms by bot id=8645316560
+2026-03-11 23:41:41,000 - aiogram.event - INFO - Update id=492417926 is handled. Duration 487 ms by bot id=8645316560
+2026-03-11 23:41:42,627 - aiogram.event - INFO - Update id=492417927 is handled. Duration 114 ms by bot id=8645316560
+2026-03-11 23:41:43,784 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-03-11 23:41:43,824 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-03-11 23:41:49,368 - __main__ - ERROR - Error creating client for +79810162881: database is locked
+2026-03-11 23:41:49,711 - aiogram.event - INFO - Update id=492417928 is handled. Duration 6331 ms by bot id=8645316560
+2026-03-11 23:42:01,030 - aiogram.dispatcher - INFO - Polling stopped
+2026-03-11 23:42:01,032 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-03-11 23:42:01,032 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8645316560)
+2026-03-11 23:42:01,298 - aiogram.dispatcher - INFO - Polling stopped for bot @gernalkomanim_bot id=8645316560 - 'botnjkgss'
